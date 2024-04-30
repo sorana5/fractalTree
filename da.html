@@ -1,0 +1,134 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="p5.js"></script>
+    <script language="javascript" type="text/javascript" src="ooft.js"></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="branch.js"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="snowflake.js"
+    ></script>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p
+      id="modelStatus"
+      style="
+        position: absolute;
+        top: 11%;
+        left: 64%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2em;
+        font-weight: 500;
+        text-align: left;
+      "
+    >
+      some ideas for the angles: <br />
+      ~set them all at the same value<br />
+      (especially 45°, 90° or 135°)<br />
+      ~set one of them at 0°<br />
+      ~try with small values for one<br />
+      and big for the other<br />
+      ~both: 75°, 60°, 60°, 60°, 45°,<br />
+      45°, 45°, 30°, 30°, 30°<br />
+      ~both: 90° * 5, 135° * 5<br />
+      ~both: 135° * 5, 15° * 5<br />
+      ~60°&105°, 15°&150°, 150°&15°,<br />
+      165°&30°, 135°&15° 90°&90°, 120°&135°,<br />
+      45°&150°, 180°&75°, 75°&105°<br />
+      ~165°&60°, 120°&30°, 30°&30°,<br />
+      75°&90°, 75°&75° 135°&105°, 165°&60°,<br />
+      135°&90°, 45°&105°, 0°&135°<br />
+    </p>
+    <style>
+      input[type="range"] {
+        appearance: none;
+        cursor: pointer;
+        color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+        background-color: rgb(131, 210, 236);
+        padding: initial;
+        border: initial;
+        border-radius: 20px;
+        border: 1px solid #040d29;
+        margin: 2px;
+        height: 20px;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        /*margin-top: -12px; /* Centers thumb on the track */
+        background-color: rgb(250, 250, 70);
+        border-radius: 50px;
+        height: 18px;
+        width: 20px;
+      }
+
+      /* Style for the first slider */
+      .slider1::-webkit-slider-thumb {
+        background-color: rgb(250, 250, 70);
+      }
+
+      /* Style for the second slider */
+      .slider2::-webkit-slider-thumb {
+        background-color: rgb(255, 255, 255);
+      }
+
+      button {
+        appearance: auto;
+        /*font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    color: buttontext;*/
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: pointer;
+        box-sizing: border-box;
+        /*background-color: rgb(162, 223, 243);*/
+        background-color: rgb(107, 245, 107);
+        /*background-color: rgb(163, 100, 37);*/
+        margin: 0em;
+        padding-block: 1px;
+        padding-inline: 6px;
+        border-width: 1px;
+        border-style: outset;
+        border-color: buttonborder;
+        border-radius: 50pt;
+        border-image: initial;
+      }
+      body {
+        color: black;
+      }
+    </style>
+  </body>
+</html>
